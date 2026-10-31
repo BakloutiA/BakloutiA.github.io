@@ -146,3 +146,4 @@ h1 { font-size:clamp(2rem,5vw,3.2rem); }
 .point h3 { margin:0 0 .2rem; font-size:1rem; }
 .point p { margin:0; color:var(--muted); font-size:.92rem; }
 @media (max-width:820px) { .about { grid-template-columns:1fr; } }
+button.btn { font:inherit; font-weight:600; cursor:pointer; }
