@@ -46,3 +46,24 @@ if (matchMedia('(hover: hover)').matches) {
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
   });
 }
+
+// mobile menu
+const menu = document.querySelector('.menu'), nav = document.querySelector('nav');
+if (menu) {
+  menu.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); menu.setAttribute('aria-expanded', false);
+  }));
+}
+
+// highlight current section in the menu
+const links = [...document.querySelectorAll('nav a[href^="#"]:not(.nav-cta)')];
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+links.forEach(l => { const s = document.querySelector(l.getAttribute('href')); if (s) spy.observe(s); });

@@ -9,13 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230b0f1a%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial%27 font-weight=%27bold%27 font-size=%2728%27 text-anchor=%27middle%27 fill=%27%23ffd93d%27%3EAB%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Ayman Baklouti – AI Automation &amp; Business IT">
+  <meta property="og:description" content="I automate business processes and build AI solutions. Open for collaborations.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <div class="bg-glow"></div>
 
   <header class="top">
     <a class="brand" href="#top"><span>A</span>B</a>
+    <button class="menu" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -39,21 +44,36 @@
           <a class="btn ghost" href="#services">What I can build</a>
           <a class="btn ghost" href="Ayman_Baklouti_CV.pdf">Download CV</a>
         </p>
-        <p class="loc">📍 Reutlingen, Germany · working with companies across Germany &amp; remote</p>
+        <p class="loc"><svg class="ico inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Reutlingen, Germany · working with companies across Germany &amp; remote</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="flow">
+          <div class="flow-head"><span class="dot"></span> Example workflow · runs automatically</div>
+          <div class="node"><span class="ni"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></span><div><b>Document or email arrives</b><small>Invoice, application, enquiry</small></div></div>
+          <div class="wire"></div>
+          <div class="node"><span class="ni"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></span><div><b>AI reads and understands it</b><small>Extracts data, decides next step</small></div></div>
+          <div class="wire"></div>
+          <div class="node"><span class="ni"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Your team approves in one click</b><small>Human stays in control</small></div></div>
+          <div class="wire"></div>
+          <div class="node"><span class="ni"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span><div><b>Filed, sent and tracked</b><small>No manual copy and paste</small></div></div>
+        </div>
       </div>
     </section>
+
+    <div class="marquee" aria-label="Tools and technologies"><div class="track"><span>n8n</span><span>Power Automate</span><span>Power Apps</span><span>Python</span><span>FastAPI</span><span>LLMs &amp; RAG</span><span>SharePoint</span><span>Microsoft 365</span><span>REST APIs</span><span>Docker</span><span>n8n</span><span>Power Automate</span><span>Power Apps</span><span>Python</span><span>FastAPI</span><span>LLMs &amp; RAG</span><span>SharePoint</span><span>Microsoft 365</span><span>REST APIs</span><span>Docker</span></div></div>
+
 
     <section id="services">
       <p class="kicker">Services</p>
       <h2>How I can help your company</h2>
       <p class="intro">I work with small and mid-sized companies and consulting firms. Tell me where your team loses time, and I'll turn it into a working solution.</p>
       <div class="grid">
-        <article class="card"><span class="icon">⚡</span><h3>Business process automation</h3><p>I map your workflows and automate the repetitive steps, from approvals and notifications to data entry, with n8n, Power Automate and APIs.</p></article>
-        <article class="card"><span class="icon">🧠</span><h3>AI assistants &amp; agents</h3><p>Assistants built on LLMs and RAG that answer questions from your own documents and knowledge, or take over routine tasks.</p></article>
-        <article class="card"><span class="icon">📄</span><h3>Document &amp; contract automation</h3><p>Automatic intake, recognition and filing of invoices, receipts and contracts, with review steps and e-signature.</p></article>
-        <article class="card"><span class="icon">📬</span><h3>Sales &amp; recruiting automation</h3><p>Lead qualification, personalised outreach, CV screening and interview scheduling, with a human approving the key steps.</p></article>
-        <article class="card"><span class="icon">🔌</span><h3>Integrations &amp; custom apps</h3><p>Connect your tools (Microsoft 365, SAP, Lexware Office and more) and build small internal apps with Power Apps or Python.</p></article>
-        <article class="card"><span class="icon">📈</span><h3>Forecasting &amp; analytics</h3><p>Machine-learning forecasts and KPI dashboards that support decisions, for example to cut overstock or plan staffing.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><h3>Business process automation</h3><p>I map your workflows and automate the repetitive steps, from approvals and notifications to data entry, with n8n, Power Automate and APIs.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></span><h3>AI assistants &amp; agents</h3><p>Assistants built on LLMs and RAG that answer questions from your own documents and knowledge, or take over routine tasks.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg></span><h3>Document &amp; contract automation</h3><p>Automatic intake, recognition and filing of invoices, receipts and contracts, with review steps and e-signature.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></span><h3>Sales &amp; recruiting automation</h3><p>Lead qualification, personalised outreach, CV screening and interview scheduling, with a human approving the key steps.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><h3>Integrations &amp; custom apps</h3><p>Connect your tools (Microsoft 365, SAP, Lexware Office and more) and build small internal apps with Power Apps or Python.</p></article>
+        <article class="card"><span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><h3>Forecasting &amp; analytics</h3><p>Machine-learning forecasts and KPI dashboards that support decisions, for example to cut overstock or plan staffing.</p></article>
       </div>
       <h3 class="sub">How we work together</h3>
       <div class="steps">
@@ -75,9 +95,9 @@
           <p>I approach every project professionally: clear goals, honest communication, careful handling of your data and solutions that are tested and documented. As a student I bring up-to-date knowledge, fresh ideas and the drive to learn whatever your project needs.</p>
         </div>
         <div class="about-points">
-          <div class="point"><h3>🔥 Driven by AI &amp; automation</h3><p>I follow new tools and methods closely and apply them to real business problems.</p></div>
-          <div class="point"><h3>💛 Feedback makes it better</h3><p>I'm happiest when people use my solutions, and I build the next version from what they tell me.</p></div>
-          <div class="point"><h3>🎓 Student, professional approach</h3><p>Studying Business IT (B.Sc., 2026) and working with clients, so theory and practice go together.</p></div>
+          <div class="point"><h3><svg class="ico inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Driven by AI &amp; automation</h3><p>I follow new tools and methods closely and apply them to real business problems.</p></div>
+          <div class="point"><h3><svg class="ico inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Feedback makes it better</h3><p>I'm happiest when people use my solutions, and I build the next version from what they tell me.</p></div>
+          <div class="point"><h3><svg class="ico inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Student, professional approach</h3><p>Studying Business IT (B.Sc., 2026) and working with clients, so theory and practice go together.</p></div>
         </div>
       </div>
     </section>
@@ -124,42 +144,42 @@
       <h2>Solutions I have built</h2>
       <div class="grid">
         <article class="card">
-          <span class="icon">📈</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
           <h3>AI Demand Forecasting MVP</h3>
           <p class="meta">Bachelor thesis · 2026</p>
           <p>Forecasts product demand for mid-sized fashion retailers (about 10–200 stores) to cut overstock and markdown losses. CSV/Excel import with automatic cleaning, ML forecasts per product and store benchmarked against a naive baseline, stock alerts, reorder and markdown suggestions, and a KPI dashboard.</p>
           <p class="chips"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>Streamlit</span></p>
         </article>
         <article class="card">
-          <span class="icon">🤖</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></span>
           <h3>AI Sales Development Representative</h3>
           <p class="meta">Two-person team · 2026</p>
           <p>AI platform for SMEs that qualifies leads and writes and sends personalised B2B outreach emails. RAG pipeline over company documents, layered FastAPI backend, database migrations, automated tests, Docker deployment and a multi-tenant SaaS architecture.</p>
           <p class="chips"><span>FastAPI</span><span>LLMs</span><span>RAG</span><span>Alembic</span><span>pytest</span><span>Docker</span><span>n8n</span></p>
         </article>
         <article class="card">
-          <span class="icon">👥</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
           <h3>AI-Supported Recruiting Workflow</h3>
           <p class="meta">HR automation · 2025</p>
           <p>n8n workflow that captures applications from email, extracts skills and experience from the CV with an LLM, matches them to the job requirements and sends HR a short summary. HR approval emails the candidate; hiring-manager approval schedules the interview.</p>
           <p class="chips"><span>n8n</span><span>LLM</span><span>Email integration</span></p>
         </article>
         <article class="card">
-          <span class="icon">📝</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></span>
           <h3>Digital Contract Automation</h3>
           <p class="meta">Consulting firm</p>
           <p>End-to-end contract lifecycle: generation from SharePoint data and templates, review in Power Apps, e-signature with status tracking. Customer data syncs between Lexware Office and Microsoft 365; signed contracts are filed automatically.</p>
           <p class="chips"><span>Power Automate</span><span>Power Apps</span><span>SharePoint</span><span>Lexware Office</span><span>APIs</span></p>
         </article>
         <article class="card">
-          <span class="icon">📂</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
           <h3>DocFlow</h3>
           <p class="meta">Client document intake &amp; routing · 2026</p>
           <p>Clients upload documents through a personal link; OCR detects the document type and target folder and files it into the right client record.</p>
           <p class="chips"><span>FastAPI</span><span>SQLAlchemy</span><span>OCR</span><span>Jinja2</span><span>Bootstrap</span><span>pytest</span></p>
         </article>
         <article class="card">
-          <span class="icon">⚙️</span>
+          <span class="icon"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></span>
           <h3>42 Heilbronn projects</h3>
           <p class="meta">2025 – 2026</p>
           <p>C library re-implementations, a Linux hardening project, a container runtime in Go, and numerous team hackathons built under time pressure.</p>
@@ -223,7 +243,7 @@
     </section>
   </main>
 
-  <footer>© 2026 Ayman Baklouti · Reutlingen, Germany</footer>
-  <script src="script.js?v=5"></script>
+  <footer><div class="foot"><span class="brand"><span>A</span>B</span><span>© 2026 Ayman Baklouti · Reutlingen, Germany</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
