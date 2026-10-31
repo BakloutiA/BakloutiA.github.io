@@ -214,3 +214,7 @@ body { background:linear-gradient(180deg,#232019 0%,#1b1a18 45%,#201e1a 100%) fi
 .marquee { background:#ffffff08; }
 .contact { background:radial-gradient(520px 240px at 50% 0,#ffd93d2e,transparent 70%),linear-gradient(160deg,#37332b,#292723); }
 footer { background:#151412; }
+
+.lang { border:1px solid var(--a1); color:var(--a1) !important; padding:.2rem .65rem; border-radius:999px; font-size:.8rem !important; font-weight:700 !important; letter-spacing:.05em; }
+.lang:hover { background:var(--a1); color:#14110a !important; }
+@media (max-width:820px) { nav a.lang { border:1px solid var(--a1) !important; align-self:flex-start; margin-top:.8rem; padding:.3rem .9rem !important; } }
