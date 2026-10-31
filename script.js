@@ -46,11 +46,3 @@ if (matchMedia('(hover: hover)').matches) {
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
   });
 }
-
-// copy email address
-const copyBtn = document.getElementById('copy-mail');
-if (copyBtn) copyBtn.addEventListener('click', async () => {
-  try { await navigator.clipboard.writeText('bkloutiaymen@gmail.com'); copyBtn.textContent = 'Copied ✓'; }
-  catch { copyBtn.textContent = 'bkloutiaymen@gmail.com'; }
-  setTimeout(() => { copyBtn.textContent = 'Copy email address'; }, 2500);
-});
