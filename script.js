@@ -21,16 +21,6 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 targets.forEach(el => io.observe(el));
 
-// count-up numbers
-document.querySelectorAll('.count').forEach(el => {
-  const to = +el.dataset.to;
-  let n = 0;
-  const t = setInterval(() => {
-    el.textContent = ++n;
-    if (n >= to) clearInterval(t);
-  }, 120);
-});
-
 // typing effect in hero
 const typed = document.querySelector('.typed');
 if (typed && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
